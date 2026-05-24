@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 const stats = [
   { num: "2017", label: "Founded" },
-  { num: "100+", label: "Projects Delivered" },
-  { num: "100+", label: "Celebrity Collaborations" },
+  { num: "150+", label: "Projects Delivered" },
+  { num: "150+", label: "Celebrity Collaborations" },
 ];
 
 const About = () => {

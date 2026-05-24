@@ -108,7 +108,9 @@ const Podcast = () => {
               Ready to hit record?
             </p>
             <a
-              href="#contact"
+              href="https://wa.me/919130000379?text=Hi%21%20I%27m%20interested%20in%20starting%20my%20podcast%20journey."
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground text-xs uppercase tracking-[0.3em] hover:bg-primary-deep transition-colors group"
             >
               Start Your Podcast Journey

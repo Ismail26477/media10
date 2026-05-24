@@ -417,7 +417,7 @@ const WorkShowcase = () => {
       {show("Corporate & Documentary") && (
         <section className="py-20">
           <div className="container">
-            <SectionHeader num="03" title="Corporate & Documentary" count="12 Projects" />
+            <SectionHeader num="03" title="Corporate & Documentary" count="14 Projects" />
             
             {/* Corporate Films with Images */}
             <div className="mb-12">

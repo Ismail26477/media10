@@ -6,13 +6,7 @@ const people = [
   { name: "Subodh Bhave", project: "Dubbing — Ani Dr. Kashinath Ghanekar", image: "/collaborators/subodh-bhave.jpeg" },
   { name: "Mahalaxmi Iyer", project: "Album Dubbing — Tujha Ek Themb", image: "/collaborators/mahalaxmi-iyer.jpeg" },
   { name: "Avdhoot Gupte", project: "Music Single Recording", image: "/collaborators/avdhoot-gupte.jpg" },
-  { name: "Savanee Ravindra", project: "Music Single Dubbing", image: "/collaborators/savanee-ravindra.jpg" },
-  { name: "Amey Wagh", project: "Marathi Film Dubbing", image: "/collaborators/amey-wagh.jpg" },
-  { name: "Siddarth Menon", project: "Marathi Film Dubbing", image: "/collaborators/siddarth-menon.jpg" },
-  { name: "Pt. Shaunak Abhisheki", project: "Marathi Single Recording", image: "/collaborators/shaunak-abhisheki.jpg" },
-  { name: "Jyoti Subash", project: "Film Dubbing — Basta", image: "/collaborators/jyoti-subash.jpg" },
-  { name: "Mangesh Borgaonkar", project: "Music Album Dubbing", image: "/collaborators/mangesh-borgaonkar.jpg" },
-];
+  ];
 
 const Card = ({ name, project, image }: { name: string; project: string; image?: string }) => (
   <div className="glass-card overflow-hidden min-w-[260px] sm:min-w-0 group hover:border-primary transition-colors">

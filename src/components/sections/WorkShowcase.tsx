@@ -81,6 +81,8 @@ const corporate: Array<CorporateItem> = [
   { name: "MGM Engineering College", type: "Corporate Film", location: "Nanded" },
   { name: "Election Campaign", type: "Campaign Film", location: "—" },
   { name: "Mitti Ke Sitare", type: "Documentary", location: "—" },
+  { name: "FinoLex Pipes", type: "Product Documentary", location: "India", image: "/corporate/finolex-pipes.jpg" },
+  { name: "Institutional Building", type: "Architectural Documentary", location: "India", image: "/corporate/institutional-building.jpg" },
 ];
 
 const shortFilms = [

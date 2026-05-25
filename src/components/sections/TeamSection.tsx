@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
+import { useState } from "react";
 
 const teamMembers = [
   {
@@ -7,6 +8,7 @@ const teamMembers = [
     name: "Aditya Deshmukh",
     position: "Founder Director",
     bio: "With over 12 years of experience in the audio and video production industry, Aditya leads Media Works Studio with a strong vision for creativity, innovation, and professional excellence.",
+    fullBio: "With over 12 years of experience in the audio and video production industry, Aditya leads Media Works Studio with a strong vision for creativity, innovation, and professional excellence.",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PG7TQHfSFeOttKngxOEstuyMlEifow.png",
   },
@@ -14,7 +16,8 @@ const teamMembers = [
     id: 2,
     name: "Mangesh Borgaonkar",
     position: "Co-Founder",
-    bio: "Mangesh plays an important role in the growth and strategic development of Media Works Studio, contributing to business operations and creative planning.",
+    bio: "Mangesh Borgaonkar is a renowned playback singer in the Marathi entertainment industry, best known for his appearance on Marathi Sa Re Ga Ma Pa.",
+    fullBio: "Mangesh Borgaonkar is a renowned playback singer in the Marathi entertainment industry, best known for his appearance on Marathi Sa Re Ga Ma Pa. With his soulful voice and strong musical background, he has earned recognition for his contribution to Marathi music and live performances.\n\nIn 2022, Mangesh joined Media Works Studio as a Co-Founder, bringing valuable industry experience and creative vision to the studio. His expertise in music, vocals, and audio production plays an important role in shaping the studio's artistic direction.\n\nPassionate about quality content and Marathi culture, Mangesh continues to inspire emerging artists while contributing to the growth of Media Works Studio through creativity, professionalism, and musical excellence.",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-YhIeujUBvF5I0Ckf8kwoZ0H66mNbob.png",
   },
@@ -53,6 +56,8 @@ const teamMembers = [
 ];
 
 const TeamSection = () => {
+  const [expandedMember, setExpandedMember] = useState<number | null>(null);
+
   return (
     <section className="relative py-24 overflow-hidden bg-background">
       {/* Background Glow */}
@@ -94,7 +99,7 @@ const TeamSection = () => {
               <Card className="overflow-hidden bg-[#111111] border border-white/10 rounded-2xl group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 
                 {/* Image */}
-                <div className="h-[360px] overflow-hidden bg-[#1a1a1a] flex items-center justify-center">
+                <div className="h-[500px] overflow-hidden bg-[#1a1a1a] flex items-center justify-center">
                   <img
                     src={member.image}
                     alt={member.name}
@@ -114,9 +119,30 @@ const TeamSection = () => {
                     </p>
                   </div>
 
-                  <p className="text-sm text-gray-400 leading-relaxed line-clamp-3">
-                    {member.bio}
-                  </p>
+                  {expandedMember === member.id ? (
+                    <div className="text-sm text-gray-400 leading-relaxed space-y-2">
+                      {member.fullBio.split("\n").map((paragraph, idx) => (
+                        <p key={idx}>{paragraph}</p>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-sm text-gray-400 leading-relaxed line-clamp-3">
+                      {member.bio}
+                    </p>
+                  )}
+
+                  {member.fullBio && member.fullBio !== member.bio && (
+                    <button
+                      onClick={() =>
+                        setExpandedMember(
+                          expandedMember === member.id ? null : member.id
+                        )
+                      }
+                      className="text-primary text-sm font-semibold hover:text-primary/80 transition-colors mt-2"
+                    >
+                      {expandedMember === member.id ? "Read Less" : "Read More"}
+                    </button>
+                  )}
                 </div>
               </Card>
             </motion.div>

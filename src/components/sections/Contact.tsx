@@ -156,7 +156,7 @@ const Contact = memo(() => {
                 </li>
                 <li className="flex gap-3">
                   <Phone size={16} className="text-primary mt-0.5 shrink-0" />
-                  <span>+91 91300 00379 <span className="text-foreground/60">— Aditya Deshmukh (Studio)</span></span>
+                  <span>+91 91300 00379 <span className="text-foreground/60"></span></span>
                 </li>
                 <li className="flex gap-3">
                   <Mail size={16} className="text-primary mt-0.5 shrink-0" />

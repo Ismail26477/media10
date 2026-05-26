@@ -40,6 +40,7 @@ interface Project {
 const imgs = [
   w1, w2, brasta, binLagunaatiGaach, ashki, saapla, swopna5, jaiBhimJaiSavitri, 
   w9, w11, w12, likeAaniSubscribe, vinayakPandit, jyoti, w15, w16, w17,
+  "/podcasts/snovel-plus-91.jpg",
   "/corporate/finolex-pipes.jpg",
   "/corporate/institutional-building.jpg"
 ];
@@ -70,6 +71,7 @@ const rawProjects: Omit<Project, "img" | "span">[] = [
   { title: "Jyoti", category: "Feature Films", desc: "Audio engineering and dubbing for this contemporary Marathi web series." },
 
   // Podcasts
+  { title: "Snovel +91", category: "Podcasts", desc: "Global podcast series connecting diverse voices and perspectives across continents." },
 
   // Music Albums
 

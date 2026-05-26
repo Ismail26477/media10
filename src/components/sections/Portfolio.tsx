@@ -27,11 +27,9 @@ import swopna5 from "@/assets/swopna-5.jpg";
 import jaiBhimJaiSavitri from "@/assets/jai-bhim-jai-savitri.jpg";
 import jyoti from "@/assets/jyoti.jpg";
 
-type Cat = "All" | "Feature Films" | "Short Films" | "Podcasts" | "Music" | "Corporate";
-
 interface Project {
   title: string;
-  category: Exclude<Cat, "All">;
+  category: string;
   img: string;
   span: string;
   desc: string;
@@ -86,13 +84,10 @@ const projects: Project[] = rawProjects.map((p, i) => ({
   span: "",
 }));
 
-const filters: Cat[] = ["All", "Feature Films", "Short Films", "Podcasts", "Music", "Corporate"];
-
 const Portfolio = memo(() => {
-  const [active, setActive] = useState<Cat>("All");
   const [open, setOpen] = useState<Project | null>(null);
 
-  const visible = active === "All" ? projects : projects.filter((p) => p.category === active);
+  const visible = projects;
   const handleOpen = useCallback((p: Project) => setOpen(p), []);
   const handleClose = useCallback(() => setOpen(null), []);
 
@@ -100,41 +95,20 @@ const Portfolio = memo(() => {
     <section id="work" className="relative py-20 md:py-32 bg-black">
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black via-black to-background pointer-events-none" />
       <div className="container">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <p className="text-sm uppercase tracking-[0.4em] text-primary mb-8 font-medium">
-              ▸ Selected Work
-            </p>
-            <h2 className="text-6xl sm:text-7xl lg:text-8xl font-black text-white tracking-tight leading-none">
-              THE <span className="text-primary">REEL.</span>
-            </h2>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            className="flex flex-wrap gap-2"
-          >
-            {filters.map((f, i) => (
-              <button
-                key={f}
-                onClick={() => setActive(f)}
-                className={`px-5 py-2.5 text-xs uppercase tracking-[0.25em] border transition-all ${active === f
-                  ? "bg-primary text-black border-primary"
-                  : "border-white/20 text-white hover:border-primary hover:text-primary"
-                  }`}
-              >
-                {f}
-              </button>
-            ))}
-          </motion.div>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mb-16"
+        >
+          <p className="text-sm uppercase tracking-[0.4em] text-primary mb-8 font-medium">
+            ▸ Selected Work
+          </p>
+          <h2 className="text-6xl sm:text-7xl lg:text-8xl font-black text-white tracking-tight leading-none">
+            THE <span className="text-primary">REEL.</span>
+          </h2>
+        </motion.div>
 
         <motion.div
           layout

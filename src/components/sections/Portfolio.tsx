@@ -57,7 +57,6 @@ const rawProjects: Omit<Project, "img" | "span">[] = [
   { title: "Swopna 5", category: "Feature Films", desc: "Complete audio and post-production work for this Marathi drama." },
   { title: "Jai Bhim Jai Savitri", category: "Feature Films", desc: "Multi-language production (Marathi, Hindi, Telugu, Kannada, Tamil, Malayalam) — complete audio engineering and dubbing." },
   { title: "Rajkumar", category: "Feature Films", desc: "Music production and dubbing for this acclaimed Marathi historical epic." },
-  { title: "Sarla Ek koti", category: "Feature Films", desc: "Complete dubbing post-production for this biographical Marathi blockbuster." },
 
   // Award-Winning Short Films
   { title: "Raan", category: "Short Films", desc: "Award-winning short film — production and complete post-production." },

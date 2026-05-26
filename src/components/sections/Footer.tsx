@@ -1,4 +1,4 @@
-import { Instagram, Youtube, MessageCircle } from "lucide-react";
+import { Instagram, Youtube, Facebook, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Logo } from "@/components/Navbar";
 
@@ -39,7 +39,8 @@ const Footer = () => {
             {[
               { Icon: Instagram, label: "Instagram", href: "https://www.instagram.com/mediaworksstudio9/" },
               { Icon: Youtube, label: "YouTube", href: "https://www.youtube.com/channel/UCJOLCg6CSMi6fCndoj6aMqw" },
-              { Icon: MessageCircle, label: "Facebook", href: "https://www.facebook.com/mediaworksstudio/" },
+              { Icon: Facebook, label: "Facebook", href: "https://www.facebook.com/mediaworksstudio/" },
+              { Icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/company/media-works-studio/" },
             ].map(({ Icon, label, href }) => (
               <a
                 key={label}

@@ -7,8 +7,8 @@ const teamMembers = [
     id: 1,
     name: "Aditya Deshmukh",
     position: "Founder Director",
-    bio: "With over 12 years of experience in the audio and video production industry, Aditya leads Media Works Studio with a strong vision for creativity, innovation, and professional excellence.",
-    fullBio: "With over 12 years of experience in the audio and video production industry, Aditya leads Media Works Studio with a strong vision for creativity, innovation, and professional excellence.",
+    bio: "With over 12 years of experience in the audio and video production industry, Aditya Deshmukh leads Media Works Studio with a strong vision for creativity, innovation, and professional excellence.",
+    fullBio: "With over 12 years of experience in the audio and video production industry, Aditya Deshmukh leads Media Works Studio with a strong vision for creativity, innovation, and professional excellence. His expertise in media production, post-production, sound design, and visual storytelling has played a key role in establishing the studio as a trusted name in the media sector. Under his leadership, Media Works Studio continues to deliver high-quality and impactful creative solutions.",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PG7TQHfSFeOttKngxOEstuyMlEifow.png",
   },
@@ -25,7 +25,8 @@ const teamMembers = [
     id: 3,
     name: "Prasad Pawar",
     position: "Re-Recording Engineer",
-    bio: "Prasad specializes in audio balancing, sound enhancement, and final sound mixing with technical precision and attention to detail.",
+    bio: "Prasad Pawar specializes in audio balancing, sound enhancement, and final sound mixing.",
+    fullBio: "Prasad Pawar specializes in audio balancing, sound enhancement, and final sound mixing. With technical precision and attention to detail, he ensures that every project achieves professional-quality sound output that enhances the overall viewing experience.",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2zsG9XWRrawAFjZRtaHPipDpLsMqHN.png",
   },
@@ -33,7 +34,8 @@ const teamMembers = [
     id: 4,
     name: "Mayur Satpute",
     position: "Editor & Colour Artist",
-    bio: "Mayur brings stories to life through creative editing and cinematic colour grading, creating visually impactful content.",
+    bio: "Mayur Satpute brings stories to life through creative editing and cinematic colour grading.",
+    fullBio: "Mayur Satpute brings stories to life through creative editing and cinematic colour grading. His expertise in visual enhancement, pacing, and post-production aesthetics helps create engaging and visually impactful content for every project.",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-21%20at%201.42.11%20PM-bMPXK25XE0fMFnU5VeUai700uuahRv.jpeg",
   },
@@ -41,7 +43,8 @@ const teamMembers = [
     id: 5,
     name: "Sumit Patil",
     position: "Recording Engineer",
-    bio: "Sumit delivers high-quality audio recordings with clarity and precision, ensuring professional audio production across all media projects.",
+    bio: "Sumit Patil is responsible for delivering high-quality audio recordings with clarity and precision.",
+    fullBio: "Sumit Patil is responsible for delivering high-quality audio recordings with clarity and precision. His technical skills and understanding of sound recording ensure professional audio production across various media projects.",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2HiqlvIYlHG5D8o1ZevFtYVOZPsTgl.png",
   },
@@ -49,7 +52,8 @@ const teamMembers = [
     id: 6,
     name: "Shrinivas Lange",
     position: "Foley Artist",
-    bio: "Shrinivas specializes in creating realistic sound effects that add depth and authenticity to visual storytelling.",
+    bio: "Shrinivas Lange specializes in creating realistic sound effects that add depth and authenticity to visual storytelling.",
+    fullBio: "Shrinivas Lange specializes in creating realistic sound effects that add depth and authenticity to visual storytelling. His creativity and sound artistry contribute significantly to enhancing the cinematic experience of projects produced at Media Works Studio.",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-SCBOHz9b5XKj85nXOVxwqZkTF4FGIx.png",
   },

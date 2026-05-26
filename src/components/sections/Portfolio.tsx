@@ -86,13 +86,13 @@ const projects: Project[] = rawProjects.map((p, i) => ({
   span: "",
 }));
 
-const filters: Cat[] = ["All", "Feature Films", "Short Films", "Podcasts", "Music", "Corporate"];
+const filters: Cat[] = ["Feature Films", "Short Films", "Podcasts", "Music", "Corporate"];
 
 const Portfolio = memo(() => {
-  const [active, setActive] = useState<Cat>("All");
+  const [active, setActive] = useState<Cat>("Feature Films");
   const [open, setOpen] = useState<Project | null>(null);
 
-  const visible = active === "All" ? projects : projects.filter((p) => p.category === active);
+  const visible = projects.filter((p) => p.category === active);
   const handleOpen = useCallback((p: Project) => setOpen(p), []);
   const handleClose = useCallback(() => setOpen(null), []);
 

@@ -48,15 +48,11 @@ const pick = (i: number) => imgs[i < imgs.length ? i : 0];
 
 const rawProjects: Omit<Project, "img" | "span">[] = [
   // Feature Films
-  { title: "Farzand", category: "Feature Films", desc: "Complete audio post-production and music production." },
-  { title: "Brasta", category: "Feature Films", desc: "Full dubbing and audio post-production for this acclaimed Marathi family drama." },
-  { title: "Ani Dr. Kashinath Ghanekar", category: "Feature Films", desc: "Full audio post production for this Marathi feature film." },
   { title: "Bin Lagunaati Gaach", category: "Feature Films", desc: "Complete audio post-production for this heartwarming Marathi family film." },
-  { title: "Ashki", category: "Feature Films", desc: "Full production support for this Marathi drama feature." },
+  { title: "Bijli", category: "Feature Films", desc: "Complete audio post-production and dubbing for this Marathi short film." },
   { title: "Saapla", category: "Feature Films", desc: "Audio post-production and dubbing for this Marathi feature film." },
   { title: "Swopna 5", category: "Feature Films", desc: "Complete audio and post-production work for this Marathi drama." },
   { title: "Jai Bhim Jai Savitri", category: "Feature Films", desc: "Multi-language production (Marathi, Hindi, Telugu, Kannada, Tamil, Malayalam) — complete audio engineering and dubbing." },
-  { title: "Rajkumar", category: "Feature Films", desc: "Music production and dubbing for this acclaimed Marathi historical epic." },
 
   // Award-Winning Short Films
   { title: "Raan", category: "Short Films", desc: "Award-winning short film — production and complete post-production." },

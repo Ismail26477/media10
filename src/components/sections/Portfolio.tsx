@@ -37,7 +37,12 @@ interface Project {
   desc: string;
 }
 
-const imgs = [w1, w2, brasta, binLagunaatiGaach, ashki, saapla, swopna5, jaiBhimJaiSavitri, w9, w11, w12, likeAaniSubscribe, vinayakPandit, jyoti, w15, w16, w17];
+const imgs = [
+  w1, w2, brasta, binLagunaatiGaach, ashki, saapla, swopna5, jaiBhimJaiSavitri, 
+  w9, w11, w12, likeAaniSubscribe, vinayakPandit, jyoti, w15, w16, w17,
+  "/corporate/finolex-pipes.jpg",
+  "/corporate/institutional-building.jpg"
+];
 const pick = (i: number) => imgs[i < imgs.length ? i : 0];
 
 const rawProjects: Omit<Project, "img" | "span">[] = [
@@ -69,6 +74,8 @@ const rawProjects: Omit<Project, "img" | "span">[] = [
   // Music Albums
 
   // Corporate Films
+  { title: "FinoLex Pipes", category: "Corporate", desc: "Product documentary showcasing premium piping solutions and manufacturing excellence." },
+  { title: "Institutional Building", category: "Corporate", desc: "Architectural documentary capturing the grandeur and design of an institutional landmark." },
 ];
 
 const projects: Project[] = rawProjects.map((p, i) => ({
